@@ -909,7 +909,7 @@ section {
 
 .form-group.focused label,
 .form-group.has-value label {
-    transform: translateY(-1.5rem) scale(0.85);
+    transform: translateY(-1.0rem) scale(0.85);
     color: var(--primary-color);
 }
 
@@ -921,6 +921,10 @@ section {
     border-radius: var(--radius-md);
     transition: var(--transition-normal);
     background: rgba(255, 255, 255, 0.8);
+}
+.form-group input{
+    height: 8vh;
+    font-size: 16px;
 }
 
 .form-group input:focus,
