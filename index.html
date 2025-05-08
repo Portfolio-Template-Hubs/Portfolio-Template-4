@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Prefers reduced motion media query support -->
+    <script>
+        // Check if the browser supports the prefers-reduced-motion media query
+        const motionMediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        // Add a class to the document element based on the user's preference
+        document.documentElement.classList.toggle('reduced-motion', motionMediaQuery.matches);
+        // Listen for changes to the prefers-reduced-motion media query
+        motionMediaQuery.addEventListener('change', () => {
+            document.documentElement.classList.toggle('reduced-motion', motionMediaQuery.matches);
+        });
+    </script>
+</head>
+<body>
+    <header class="glass-nav">
+        <div class="container">
+            <nav>
+                <div class="logo" aria-label="Home">
+                    <span class="logo-text">N.</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text slide-in-left">
+                        <h1 class="gradient-text">Hi, I'm <span class="highlight">Nikhil</span></h1>
+                        <p class="subtitle">A passionate web developer crafting beautiful digital experiences</p>
+                        <div class="cta-buttons">
+                            <a href="#projects" class="btn primary-btn">View My Work</a>
+                            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-image zoom-in">
+                        <div class="profile-image-container">
+                            <div class="profile-placeholder" aria-label="Profile image"></div>
+                            <div class="blob-shape"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text slide-in-left">
+                        <p>I'm a web developer with a passion for creating beautiful and functional websites. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+                        <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                    </div>
+                    <div class="about-stats slide-in-right">
+                        <div class="stat-card">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills" aria-label="Skills Section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-grid" role="list">
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <h4>HTML5</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <h4>CSS3</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <h4>React</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other Skills</h3>
+                        <div class="skills-grid" role="list">
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fas fa-universal-access"></i></div>
+                                <h4>Accessibility</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <h4>Responsive Design</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                                <h4>Git</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card fade-in" role="listitem" tabindex="0">
+                                <div class="skill-icon"><i class="fas fa-search"></i></div>
+                                <h4>SEO</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card flip-in">
+                        <div class="project-image">
+                            <div class="project-placeholder" aria-label="Project screenshot"></div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn" aria-label="View E-commerce Website Demo">Demo</a>
+                                    <a href="#" class="btn small-btn" aria-label="View E-commerce Website Code">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with shopping cart functionality and payment integration.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card flip-in">
+                        <div class="project-image">
+                            <div class="project-placeholder" aria-label="Project screenshot"></div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn" aria-label="View Portfolio Website Demo">Demo</a>
+                                    <a href="#" class="btn small-btn" aria-label="View Portfolio Website Code">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A modern portfolio website with smooth animations and accessibility features.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card flip-in">
+                        <div class="project-image">
+                            <div class="project-placeholder" aria-label="Project screenshot"></div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn" aria-label="View Weather App Demo">Demo</a>
+                                    <a href="#" class="btn small-btn" aria-label="View Weather App Code">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>A weather application that displays current weather and forecasts based on user location.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out to me for collaboration or just to say hello!</p>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>New York, NY, USA</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Nikhil. All Rights Reserved.</p>
+                <p>Designed and built with <span aria-label="love" class="heart">❤️</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
